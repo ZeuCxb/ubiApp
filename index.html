@@ -3,12 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
+	<title>ubiApp</title>
 	<link rel="stylesheet" type="text/css" href="src/libs/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="src/libs/bootstrap/dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="src/sass/style.css">
 </head>
-<body data-ng-app="ubiApp">
-	<div data-ng-controller="MusicController as music">
+<body data-ng-app="ubiApp" class="container">
+	<div data-ng-controller="MusicController as music" class="app">
     	<div data-music-list data-musics="music.musics">
 	</div>
 	<script type="text/javascript" src="src/libs/angular/angular.js"></script>

@@ -1,13 +1,14 @@
 <div>
-	<h3>
-		<a data-ng-href="{{ value.track_file_url }}">{{ value.track_title }}</a>
-	</h3>
-
-	<!-- <a data-ng-href="{{ value.album_url }}">{{ value.album_title }}</a>
-    		
-	<small><a data-ng-href="{{ value.artist_url }}">{{ value.artist_name }}</a></small> -->
-	
-	<img data-ng-src="{{value.track_image_file}}" alt="">
-	
-	<small>{{ value.track_duration }}</small>
+	<div class="jumbotron">
+	  <h3>
+	  	<a data-ng-href="{{ value.track_file_url }}">{{ value.track_title }}</a> ({{ value.track_duration }})
+	  </h3>
+	  <p>
+	  	<a data-ng-href="{{ value.album_url }}" target="_blank">{{ value.album_title }}</a>
+    	-
+		<small><a data-ng-href="{{ value.artist_url }}" target="_blank">{{ value.artist_name }}</a></small>
+	  </p>
+	  <p><a class="btn btn-primary btn-lg" href="#" role="button">View more</a></p>
+	</div>
+	<!-- <img data-ng-src="{{value.track_image_file}}" alt="">-->
 </div>
