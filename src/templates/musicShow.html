@@ -1,13 +1,13 @@
 <div>
-	<div class="jumbotron">
+	<div class="row jumbotron">
 	  <h3>
-	  	<a data-ng-href="{{ value.track_file_url }}">{{ value.track_title }}</a> ({{ value.track_duration }})
+	  	{{ value.track_title }}
 	  </h3>
 	  <p>
 	  	<a data-ng-href="{{ value.album_url }}" target="_blank">{{ value.album_title }}</a>
     	-
 		<small><a data-ng-href="{{ value.artist_url }}" target="_blank">{{ value.artist_name }}</a></small>
 	  </p>
-	  <p><a class="btn btn-primary btn-lg" ng-href="#/show/{{ key }}" role="button">View more</a></p>
+	  <p><a class="btn btn-primary btn-lg" data-ng-href="#/show/{{ key }}" role="button">View more</a></p>
 	</div>
 </div>

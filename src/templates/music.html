@@ -1,13 +1,25 @@
 <div>
-	<div class="jumbotron">
-	  <h3>
-	  	<a data-ng-href="{{ value.track_file_url }}">{{ value.track_title }}</a> ({{ value.track_duration }})
-	  </h3>
-	  <p>
-	  	<a data-ng-href="{{ value.album_url }}" target="_blank">{{ value.album_title }}</a>
-    	-
-		<small><a data-ng-href="{{ value.artist_url }}" target="_blank">{{ value.artist_name }}</a></small>
-	  </p>
+	<div class="row jumbotron">
+		<div class="col-xs-6 col-md-3">
+	    	<a href="#" class="thumbnail">
+	      		<img data-ng-src="{{value.track_image_file}}" alt="">
+	    	</a>
+	  	</div>
+	  	<div class="col-xs-6 col-md-9">
+	  		<h3>
+		  		{{ value.track_title }}
+		  	</h3>
+		  	<p>
+		  		<a data-ng-href="{{ value.album_url }}" target="_blank">{{ value.album_title }}</a>
+	    		-
+				<small><a data-ng-href="{{ value.artist_url }}" target="_blank">{{ value.artist_name }}</a></small>
+		  	</p>
+		  	
+		  	<p>Duration: {{ value.track_duration }}min</p>
+	
+			<p>Published: {{ value.track_date_published }}</p>
+
+		  	<p><a class="btn btn-primary btn-lg" data-ng-href="{{ value.track_file_url }}" role="button">Download</a></p>
+	  	</div>
 	</div>
-	<!-- <img data-ng-src="{{value.track_image_file}}" alt="">-->
 </div>
