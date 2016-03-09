@@ -23,6 +23,5 @@
     }
 
     /* @ngInject */
-    function Controller($scope) {
-    }
+    function Controller($scope) {}
 })();

@@ -2,5 +2,7 @@
     'use strict';
 
     angular
-        .module('ubiApp', []);
+        .module('ubiApp', [
+        	'ngRoute'
+        ]);
 })();

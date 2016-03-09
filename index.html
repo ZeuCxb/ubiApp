@@ -9,13 +9,17 @@
 	<link rel="stylesheet" type="text/css" href="src/sass/style.css">
 </head>
 <body data-ng-app="ubiApp" class="container">
-	<div data-ng-controller="MusicController as music" class="app">
-    	<div data-music-list data-musics="music.musics">
-	</div>
+	<!-- Views -->
+	<div ng-view></div>
+
+	<!-- Scripts -->
 	<script type="text/javascript" src="src/libs/angular/angular.js"></script>
+	<script type="text/javascript" src="src/libs/angular-route/angular-route.js"></script>
 	<script type="text/javascript" src="src/js/ubiApp.module.js"></script>
+	<script type="text/javascript" src="src/js/configs/route.config.js"></script>
 	<script type="text/javascript" src="src/js/services/api.service.js"></script>
-	<script type="text/javascript" src="src/js/controllers/music.controller.js"></script>
+	<script type="text/javascript" src="src/js/controllers/musicList.controller.js"></script>
+	<script type="text/javascript" src="src/js/controllers/musicShow.controller.js"></script>
 	<script type="text/javascript" src="src/js/directives/musicShow.directive.js"></script>
 	<script type="text/javascript" src="src/js/directives/musicList.directive.js"></script>
 </body>

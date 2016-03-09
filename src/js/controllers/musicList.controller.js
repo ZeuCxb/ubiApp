@@ -3,7 +3,7 @@
 
     angular
         .module('ubiApp')
-        .controller('MusicController', Controller);
+        .controller('MusicListController', Controller);
 
     Controller.$inject = ['ApiService'];
 
@@ -19,7 +19,7 @@
         function loadMusicList() {
             return ApiService.getAll().then(function(data) {
                 vm.musics = data.data.aTracks;
-                
+
                 return vm.musics;
             });
         }

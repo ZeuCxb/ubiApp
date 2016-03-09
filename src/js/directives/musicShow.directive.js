@@ -15,7 +15,8 @@
             controller: Controller,
             templateUrl: 'src/templates/musicShow.html',
             scope: {
-            	value: '='
+            	value: '=',
+                key: '='
             }
         };
 
@@ -23,6 +24,5 @@
     }
 
     /* @ngInject */
-    function Controller($scope) {
-    }
+    function Controller($scope) {}
 })();
