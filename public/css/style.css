@@ -1,3 +1,61 @@
+.breadcrumb {
+  background-color: #000;
+  color: #CB067D; }
+  .breadcrumb a {
+    color: #FFF; }
+
+.musicShow {
+  height: 350px;
+  overflow: hidden; }
+  .musicShow .thumbnail {
+    height: 255px;
+    border-radius: 150px;
+    background: url("../img/noimage.jpg") center center; }
+    .musicShow .thumbnail img {
+      border-radius: 150px;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+  .musicShow .thumbnail:hover {
+    background: #CB067D;
+    border-color: #000; }
+  .musicShow h4 {
+    color: #CB067D;
+    text-align: center; }
+  .musicShow p {
+    text-align: center; }
+    .musicShow p a {
+      color: #FFF; }
+
+.music .thumbnail {
+  height: 300px;
+  width: 300px;
+  border-radius: 300px;
+  background: url("../img/noimage.jpg") center center;
+  overflow: hidden;
+  margin: 20px auto; }
+  .music .thumbnail img {
+    border-radius: 150px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+
+.music h3 {
+  color: #CB067D;
+  text-align: center; }
+
+.music .btn-pink {
+  background: #CB067D;
+  color: #FFF; }
+
+.music p {
+  text-align: center;
+  color: #FFF; }
+  .music p a {
+    color: #CB067D; }
+
 body {
   background-color: #333;
   font-family: "Tahoma"; }
@@ -14,31 +72,9 @@ body {
       margin-bottom: 0px; }
 
 .app .jumbotron {
-  background-color: #E7F1FC;
+  background-color: #333;
+  border: none;
+  box-shadow: none !important;
   -webkit-box-shadow: 2px 3px 13px -5px rgba(50, 50, 50, 0.68);
   -moz-box-shadow: 2px 3px 13px -5px rgba(50, 50, 50, 0.68);
   box-shadow: 2px 3px 13px -5px rgba(50, 50, 50, 0.68); }
-
-.app .music {
-  height: 350px;
-  overflow: hidden; }
-  .app .music .thumbnail {
-    height: 255px;
-    border-radius: 150px;
-    background: url("../img/noimage.jpg") center center; }
-    .app .music .thumbnail img {
-      border-radius: 150px;
-      position: relative;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%); }
-  .app .music .thumbnail:hover {
-    background: #CB067D;
-    border-color: #000; }
-  .app .music h4 {
-    color: #CB067D;
-    text-align: center; }
-  .app .music p {
-    text-align: center; }
-    .app .music p a {
-      color: #FFF; }

@@ -2,6 +2,10 @@
 @import 'partials/fonts'
 @import 'mixins/box-shadow'
 
+@import 'partials/breadcrumb'
+@import 'partials/musicShow'
+@import 'partials/music'
+
 body
 	background-color: $dark
 	font-family: $font
@@ -22,35 +26,7 @@ body
 
 .app
 	.jumbotron
-		background-color: $blue
+		background-color: $dark
+		border: none
+		box-shadow: none !important
 		+box-shadow
-
-	.music
-		height: 350px
-		overflow: hidden
-
-		.thumbnail
-			height: 255px
-			border-radius: 150px
-			background: url('../img/noimage.jpg') center center
-
-			img
-				border-radius: 150px
-				position: relative;
-				left: 50%
-				top: 50%
-				transform: translate(-50%, -50%)
-
-		.thumbnail:hover
-			background: $pink
-			border-color: $black
-		
-		h4
-				color: $pink
-				text-align: center
-
-		p
-			text-align: center
-			
-			a
-				color: $white
