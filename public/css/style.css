@@ -1,12 +1,44 @@
-.body {
-  background-color: #EEE;
+body {
+  background-color: #333;
   font-family: "Tahoma"; }
+  body .top {
+    background-color: #000;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 40px; }
+    body .top h3 {
+      color: #CB067D;
+      margin-top: 0px; }
+    body .top p {
+      color: white;
+      margin-bottom: 0px; }
 
-.app {
-  padding-top: 30px; }
-  .app .jumbotron,
-  .app .breadcrumb {
-    background-color: #E7F1FC;
-    -webkit-box-shadow: 2px 3px 13px -5px rgba(50, 50, 50, 0.68);
-    -moz-box-shadow: 2px 3px 13px -5px rgba(50, 50, 50, 0.68);
-    box-shadow: 2px 3px 13px -5px rgba(50, 50, 50, 0.68); }
+.app .jumbotron {
+  background-color: #E7F1FC;
+  -webkit-box-shadow: 2px 3px 13px -5px rgba(50, 50, 50, 0.68);
+  -moz-box-shadow: 2px 3px 13px -5px rgba(50, 50, 50, 0.68);
+  box-shadow: 2px 3px 13px -5px rgba(50, 50, 50, 0.68); }
+
+.app .music {
+  height: 350px;
+  overflow: hidden; }
+  .app .music .thumbnail {
+    height: 255px;
+    border-radius: 150px;
+    background: url("../img/noimage.jpg") center center; }
+    .app .music .thumbnail img {
+      border-radius: 150px;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+  .app .music .thumbnail:hover {
+    background: #CB067D;
+    border-color: #000; }
+  .app .music h4 {
+    color: #CB067D;
+    text-align: center; }
+  .app .music p {
+    text-align: center; }
+    .app .music p a {
+      color: #FFF; }

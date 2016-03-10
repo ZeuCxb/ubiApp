@@ -13,7 +13,7 @@
         //
         var directive = {
             controller: Controller,
-            templateUrl: 'src/templates/musicList.html',
+            templateUrl: 'public/templates/musicList.html',
             scope: {
             	musics: '='
             }

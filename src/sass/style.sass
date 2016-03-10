@@ -2,14 +2,55 @@
 @import 'partials/fonts'
 @import 'mixins/box-shadow'
 
-.body
-	background-color: $grey
+body
+	background-color: $dark
 	font-family: $font
 
-.app
-	padding-top: 30px
+	.top
+		background-color: $black
+		text-align: center
+		padding: 30px
+		margin-bottom: 40px
 
-	.jumbotron,
-	.breadcrumb
+		h3
+			color: $pink
+			margin-top: 0px
+
+		p
+			color: white
+			margin-bottom: 0px
+
+.app
+	.jumbotron
 		background-color: $blue
 		+box-shadow
+
+	.music
+		height: 350px
+		overflow: hidden
+
+		.thumbnail
+			height: 255px
+			border-radius: 150px
+			background: url('../img/noimage.jpg') center center
+
+			img
+				border-radius: 150px
+				position: relative;
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+
+		.thumbnail:hover
+			background: $pink
+			border-color: $black
+		
+		h4
+				color: $pink
+				text-align: center
+
+		p
+			text-align: center
+			
+			a
+				color: $white
