@@ -1,4 +1,12 @@
 # ubiApp
 A simple angular app
 
-Before using run: `bower install`
+## Install
+
+<p> Run: </p>
+
+`bower install`
+
+`npm install`
+
+`lite-server`
