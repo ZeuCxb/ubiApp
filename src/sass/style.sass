@@ -1,15 +1,15 @@
-=box-shadow()
-	-webkit-box-shadow: 2px 3px 13px -5px rgba(50,50,50,0.68)
-	-moz-box-shadow:    2px 3px 13px -5px rgba(50,50,50,0.68)
-	box-shadow:         2px 3px 13px -5px rgba(50,50,50,0.68)
+@import 'partials/colors'
+@import 'partials/fonts'
+@import 'mixins/box-shadow'
 
 .body
-	background-color: #EEE
+	background-color: $grey
+	font-family: $font
 
 .app
 	padding-top: 30px
 
 	.jumbotron,
 	.breadcrumb
-		background-color: #E7F1FC
+		background-color: $blue
 		+box-shadow
