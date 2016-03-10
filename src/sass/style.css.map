@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAIA,KAAK,CACJ,gBAAgB,CCLV,IAAI,CDMV,WAAW,CENL,QAAQ,CFQf,IAAI,CACH,WAAW,CAAE,IAAI,CAEjB,gCAAW,CAEV,gBAAgB,CCZX,OAAO,CEAb,kBAAkB,CAAE,qCAAqC,CACzD,eAAe,CAAK,qCAAqC,CACzD,UAAU,CAAU,qCAAqC",
-"sources": ["style.sass","partials/colors.sass","partials/fonts.sass","mixins/box-shadow.sass"],
-"names": [],
-"file": "style.css"
-}
